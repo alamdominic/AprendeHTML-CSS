@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet HTML</title>
+</head>
+
+<body>
+<h1>Cheatsheet HTML</h1>
+<h2>Principales tags</h2>
+
+<h2>Meta datos</h2>
+<ul>
+    <li>&lt;title&gt; Titulo documento, aparece en la ventana</li>
+    <li>&lt;meta&gt; Información (charset, viewport, etc.)</li>
+    <li>&lt;link&gt; Links externos</li> 
+    <li>&lt;style&gt; CSS</li> 
+    <li>&lt;script&gt; Javascript</li> 
+</ul>
+<hr>
+
+<h2>Texto y encabezado</h2>
+<ul>
+    <li>&lt;h1 al h6&gt; Headings</li>
+    <li>&lt;p&gt; Párrafo</li>
+    <li>&lt;br&gt; Salto de línea</li>
+    <li>&lt;hr&gt; Línea horizontal</li>
+    <li>&lt;pre&gt; Texto preformateado</li>
+</ul>
+<hr>
+
+<h2>Contenido Agrupado</h2>
+<ul>
+    <li>&lt;div&gt; Contenedor</li>
+    <li>&lt;<span style="color:red; font-weight:bold;">span</span>&gt; Contenedor en línea</li>
+    <li>&lt;header&gt; Encabezado de página</li>
+    <li>&lt;footer&gt; Pie de página</li>
+    <li>&lt;main&gt; Contenido principal</li>
+    <li>&lt;section&gt; Sección de contenido</li>
+    <li>&lt;article&gt; Artículo independiente</li>
+    <li>&lt;aside&gt; Contenido relacionado</li>
+    <li>&lt;nav&gt; Navegación</li>
+    <li>&lt;a&gt; Ancla, enlace: <span style="color:green; font-weight:bold;">href="link", target="_blank"</span></li>
+</ul>
+<hr>
+
+<h2>Formato de texto</h2>
+<ul>
+    <li>&lt;<strong>strong</strong>&gt; Negrita énfasis</li>
+    <li>&lt;<b>b</b>&gt; Negrita</li>
+    <li>&lt;<em>em</em>&gt; Énfasis</li>
+    <li>&lt;<i>i</i>&gt; Cursiva</li>
+    <li>&lt;<u>u</u>&gt; Subrayado</li>
+    <li>&lt;<mark>mark</mark>&gt; Texto resaltado</li>
+    <li>&lt;<small>small</small>&gt; Texto pequeño</li>
+    <li>&lt;<sub>sub</sub>&gt; Subíndice</li>
+    <li>&lt;<sup>sup</sup>&gt; Superíndice</li>
+    <li>&lt;<code>code</code>&gt; Código</li>
+    <li>&lt;blockquote&gt; <blockquote>Cita en bloque</blockquote></li>
+    <li>&lt;<cite>cite</cite>&gt; Cita</li>
+    <li>&lt;<q>q</q>&gt; Cita corta (quoted)</li>
+    <li>&lt;<abbr>abbr</abbr>&gt; Abreviatura</li>
+    <li>&lt;<time>time</time>&gt; Fecha u hora</li>
+</ul>
+<hr>
+
+<h2>Multimedia</h2>
+<ul>
+    <li>&lt;img&gt; Imagen <span style="color: green;">src="imagen" alt="descripción" width="auto" height="auto"</span></li>
+    <li>&lt;figure&gt; Figura</li>
+    <li>&lt;figcaption&gt; Pie de imagen</li>
+    <li>&lt;video&gt; Video <span style="color: green;">src="video" autoplay loop</span></li>
+    <li>&lt;source&gt; Fuente del video</li>
+    <li>&lt;track&gt; Subtítulos</li>
+</ul>
+<hr>
+
+<h2>Listas</h2>
+<ul>
+    <li>&lt;ul&gt; Lista no ordenada</li>
+    <li>&lt;ol&gt; Lista ordenada</li>
+    <li>&lt;li&gt; Elemento de lista</li>
+    <li>&lt;dl&gt; Lista de definición</li>
+    <li>&lt;dt&gt; Término</li>
+    <li>&lt;dd&gt; Definición</li>
+</ul>
+<hr>
+
+<h2>Tablas</h2>
+<ul>
+    <li>&lt;table&gt; Tabla</li>
+    <li>&lt;tr&gt; Fila de tabla</li>
+    <li>&lt;th&gt; Encabezado de columna</li>
+    <li>&lt;td&gt; Celda de datos</li>
+    <li>&lt;thead&gt; Encabezado de tabla</li>
+    <li>&lt;tbody&gt; Cuerpo de tabla</li>
+    <li>&lt;tfoot&gt; Pie de tabla</li>
+    <li>&lt;caption&gt; Título de la tabla</li>
+</ul>
+
+<pre>
+<table border="1">
+    <caption>Ejemplo de tabla</caption>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Juan</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+</pre>
+<hr>
+
+<h2>Formularios</h2>
+<ul>
+    <li>&lt;form&gt; Formulario</li>
+    <li>&lt;input&gt; Entrada de datos</li>
+    <li>&lt;label&gt; Etiqueta de campo</li>
+    <li>&lt;textarea&gt; Área de texto</li>
+    <li>&lt;select&gt; Menú desplegable</li>
+    <li>&lt;option&gt; Opción dentro de &lt;select&gt;</li>
+    <li>&lt;button&gt; Botón</li>
+    <li>&lt;fieldset&gt; Agrupar campos</li>
+    <li>&lt;legend&gt; Título del fieldset</li>
+</ul>
+
+<pre>
+<form action="/enviar" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
+
+    <label for="opciones">Elige una opción:</label>
+    <select id="opciones" name="opciones">
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+    </select><br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+</pre>
+
+</body>
+</html>
